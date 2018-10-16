@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.wcl.classhelp20.main_fragment">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="140"
+            android:background="#99f6f6f6"
+            android:visibility="invisible">
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="#F0F3F6"
+            android:layout_weight="1780"
+            >
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:padding="1dp"
+                android:background="@drawable/bg_layout_shape">
+
+
+                    <LinearLayout style="@style/mid_layout"
+                        android:id="@+id/mine_password">
+                        <TextView style="@style/usertext" android:text="修改密码" />
+                        <ImageView style="@style/img_arrow"/>
+                    </LinearLayout>
+
+                    <!-- 分割线 -->
+                    <View style="@style/bg_line"/>
+
+                    <LinearLayout style="@style/mid_layout"
+                        android:id="@+id/mine_jwc_password">
+                        <TextView style="@style/usertext" android:text="预设教务处密码" />
+                        <ImageView style="@style/img_arrow"/>
+                    </LinearLayout>
+                    <View style="@style/bg_line"/>
+
+                    <LinearLayout style="@style/mid_layout">
+                        <TextView style="@style/usertext" android:text="消息通知" />
+                        <ImageView style="@style/img_arrow"/>
+                    </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

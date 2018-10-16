@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wcl.classhelp20.main_fragment">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/sign_bg"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="50dp"
+        android:translationY="-100dp"
+        android:paddingRight="50dp"
+        android:src="@drawable/sign_circle" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/sign_gif"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingLeft="85dp"
+        android:translationY="-100dp"
+        android:paddingRight="85dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/sign_scan" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/sign_search"
+        android:translationY="150dp"
+        android:background="@drawable/sign_button_selector"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="140"
+            android:background="#99f6f6f6"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课堂辅助"
+                android:textSize="17dp"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/main_title" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1615"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="165"
+            android:background="#f6f6f6"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/main_bottom"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/main_bottom_main"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/main_bottom_main"/>
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/main_bottom_sign"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/main_bottom_sign"/>
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/main_bottom_work"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/main_bottom_work"/>
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:id="@+id/main_bottom_mine"
+                    android:background="@drawable/main_bottom_mine"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="主页"
+                    android:textColor="#717f8b"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="0.25"
+                    android:id="@+id/main_bottom_main_text"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="签到"
+                    android:textColor="#717f8b"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="0.25"
+                    android:id="@+id/main_bottom_sign_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="作业"
+                    android:textColor="#717f8b"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="0.25"
+                    android:id="@+id/main_bottom_work_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的"
+                    android:textColor="#717f8b"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="0.25"
+                    android:id="@+id/main_bottom_mine_text" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

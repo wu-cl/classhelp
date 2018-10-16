@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wcl.classhelp20.fragment_jwc">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/jwc_progressBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在登陆中 · · ·"
+        android:layout_below="@id/jwc_progressBar"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:id="@+id/jwc_progressBar_text" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="140"
+            android:background="#99f6f6f6"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课堂辅助"
+                android:textSize="17dp"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/main_title" />
+        </LinearLayout>
+
+
+        <WebView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1780"
+            android:id="@+id/web_jwc"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</RelativeLayout>
